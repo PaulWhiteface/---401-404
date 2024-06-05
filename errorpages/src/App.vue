@@ -1,14 +1,14 @@
 <template>
-  <NotFound />
+  <NoAuth />
 </template>
 
 <script>
-import NotFound from './components/NotFound.vue'
+import NoAuth from './components/NoAuth.vue'
 
 export default {
   name: 'App',
   components: {
-    NotFound
+    NoAuth
   }
 }
 </script>
@@ -29,4 +29,5 @@ export default {
     padding: 0;
     margin: 0;
   }
+
 </style>
