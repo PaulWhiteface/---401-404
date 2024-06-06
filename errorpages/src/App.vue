@@ -1,15 +1,12 @@
 <template>
-  <NoAuth />
+  <router-view></router-view>
 </template>
 
 <script>
-import NoAuth from './components/NoAuth.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    NoAuth
-  }
+  name: 'App'
 }
 </script>
 
