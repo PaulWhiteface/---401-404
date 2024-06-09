@@ -3,7 +3,7 @@
     <div class="no-auth__text-container">
       <h1 class="no-auth__title">ТЫ НЕ АВТОРИЗОВАН</h1>
       <h2 class="no-auth__text">Пожалуйста, войдите в систему или создайте учётную запись, чтобы получить доступ к этой странице.</h2>
-      <button class="no-auth__button">Авторизоваться</button>
+      <button class="no-auth__button no-auth__button-auth">Авторизоваться</button>
       <button class="no-auth__button no-auth__button-return">Вернуться на главную</button>
     </div>
     <picture class="no-auth__image-container">
@@ -72,24 +72,38 @@ export default {
   }
   
   .no-auth__button {
+    display: inline-block;
+    box-sizing: border-box;
     font-weight: 700;
     font-size: 22px;
     line-height: 32.74px;
     color: #414143;
     max-width: 401px;
-    max-height: 71px;
-    border: none;
+    height: 66px;
+    border: 2px solid #C9FF22;
     border-radius: 50px;
-    padding: 17px 0px;
+    padding: 16px 0px;
     background-color: #C9FF22;
     cursor: pointer;
     margin-bottom: 20px;
   }
 
+  .no-auth__button-auth {
+    transition: background-color 0.3s;
+  }
+
+  .no-auth__button-auth:hover {
+    background-color: transparent;
+  }
+
   .no-auth__button-return {
-    background-color: #F2F1EC;
-    border: 1px solid #C9FF22;
+    background-color: transparent;
     margin-bottom: 0;
+    transition: border 0.3s;
+  }
+
+  .no-auth__button-return:hover {
+    border: 2px solid #B4E321;
   }
 
   @media screen and (max-width: 1400px) {

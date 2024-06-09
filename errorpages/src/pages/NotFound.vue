@@ -67,11 +67,16 @@ export default {
     line-height: 32.74px;
     padding: 14px 24px;
     white-space: nowrap;
-    background-color: #F2F1EC;
+    background-color: transparent;
     border: 2px solid #C9FF22;
     border-radius: 50px;
     cursor: pointer;
     color: #414143;
+    transition: border 0.3s;
+  }
+
+  .not-found__button:hover {
+    border: 2px solid #B4E321;
   }
 
   @media screen and (max-width: 1100px) {
