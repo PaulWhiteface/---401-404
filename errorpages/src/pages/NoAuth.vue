@@ -7,7 +7,7 @@
       <button class="no-auth__button no-auth__button-return">Вернуться на главную</button>
     </div>
     <picture class="no-auth__image-container">
-      <source srcset="../assets/img/NoAuthMedium.svg" media="(max-width: 768px)">
+      <source srcset="../assets/img/NoAuthMedium.svg" media="(max-width: 743px)">
       <source srcset="../assets/img/NoAuthSmall.svg" media="(max-width: 360px)">
 
       <img class="no-auth__image" src="../assets/img/NoAuthLarge.svg" alt="" />
@@ -30,7 +30,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px;
+    padding: 47px 71px 0;
     font-family: Nunito Sans;
     color: #414143;
   }
@@ -38,28 +38,32 @@ export default {
   .no-auth__text-container {
     display: flex;
     flex-direction: column;
-    max-width: 722px;
+    max-width: 698px;
+    margin-left: 3px;
   }
   
   .no-auth__title {
     font-family: Unbounded;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 57.6px;
     white-space: nowrap;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    text-align: left;
   }
 
   .no-auth__text {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   .no-auth__image-container {
+    margin-top: 6px;
+    margin-right: 4px;
     max-width: 1018px;
-    max-height: 515px
+    max-height: 515px;
   }
 
   .no-auth__image {
@@ -69,17 +73,17 @@ export default {
   
   .no-auth__button {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32.74px;
     color: #414143;
-    max-width: 425px;
-    max-height: 73px;
+    max-width: 401px;
+    max-height: 71px;
     border: none;
     border-radius: 50px;
-    padding: 20px 32px;
+    padding: 17px 0px;
     background-color: #C9FF22;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 
   .no-auth__button-return {
@@ -113,6 +117,7 @@ export default {
   @media screen and (max-width: 1111px) {
     .no-auth {
       flex-direction: column-reverse;
+      padding: 50px 40px;
     }
 
     .no-auth__text-container {
@@ -130,7 +135,21 @@ export default {
     }
 
     .no-auth__image-container {
-      margin-top: 200px;
+      margin-top: 135px;
+      max-width: 662px;
+      max-height: 402px;
+    }
+
+    .no-auth__text-container {
+      margin-top: 50px;
+    }
+
+    .no-auth__title {
+      margin-bottom: 20px;
+    }
+
+    .no-auth__text {
+      margin-bottom: 20px;
     }
   }
 
@@ -142,6 +161,7 @@ export default {
     .no-auth__text-container {
       align-items: start;
       max-width: 320px;
+      margin-top: 10px;
     }
 
     .no-auth__title {
@@ -150,16 +170,24 @@ export default {
     }
 
     .no-auth__text {
-      text-align: start;
+      text-align: justify;
+      font-size: 14px;
+      line-height: 16.8px;
+      margin-bottom: 22px;
     }
 
     .no-auth__button {
       align-self: center;
-      width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 32px 20px;
+      margin-bottom: 13px;
     }
 
     .no-auth__image-container {
-      margin-top: 100px;
+      margin-top: 70px;
     }
   }
 

@@ -21,17 +21,12 @@ export default {
 </script>
 
 <style>
-div,
-h1,
-h2,
-button {
-  outline: 1px solid red;
-}
 
   .not-found {
     background-color: #F2F1EC;
     background-image: url('../assets/img/NotFoundBackgroundLarge.svg');
     background-repeat: no-repeat;
+    background-size: 1340px 730px;
     background-position: top right;
     height: 100vh;
     display: flex;
@@ -42,17 +37,18 @@ button {
   }
 
   .not-found__title {
-    margin-top: 150px;
+    margin-top: 142px;
     margin-bottom: 50px;
     font-family: Unbounded;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 57.6px;
     text-align: center;
   }
 
   .not-found__picture {
-    max-width: 1290px;
+    margin-top: 5px;
+    max-width: 1210px;
     max-height: 520px;
   }
 
@@ -62,14 +58,14 @@ button {
   }
 
   .not-found__button {
-    margin-top: 50px;
+    margin-top: 35px;
     max-width: 327px;
     max-height: 73px;
     font-family: Nunito Sans;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 32.74px;
-    padding: 20px 32px;
+    padding: 14px 24px;
     white-space: nowrap;
     background-color: #F2F1EC;
     border: 2px solid #C9FF22;
@@ -94,7 +90,17 @@ button {
 
   @media screen and (max-width: 768px) {
     .not-found {
-      background-image: url('../assets/img/NotFoundBackgroundMedium.svg')
+      background-image: url('../assets/img/NotFoundBackgroundMedium.svg');
+      background-size: 660px 685px;
+      padding: 0 40px;
+    }
+
+    .not-found__title {
+      margin-top: 152px;
+    }
+
+    .not-found__button {
+      margin-top: 55px;
     }
 
   }
@@ -113,10 +119,23 @@ button {
   @media screen and (max-width: 360px) {
     .not-found {
       background-image: url('../assets/img/NotFoundBackgroundSmall.svg');
+      background-size: 358px 406px;
     }
 
     .not-found__title {
-      max-width: 240px;
+      max-width: 220px;
+      font-size: 24px;
+      margin-bottom: 37px;
+    }
+
+    .not-found__picture {
+      margin-top: 0;
+    }
+
+    .not-found__button {
+      margin-top: 36px;
+      width: 100%;
+      padding: 18px 32px;
     }
 
   }
